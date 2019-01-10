@@ -35,8 +35,8 @@ class Student
   end
 
   def self.create(student_hash)
-    student_hash.each {|key, value| self.send("#{key}=", value)}
-    binding.pry 
+    student_hash.each {|key, value| self.send("#{key} =", value)}
+    binding.pry
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
